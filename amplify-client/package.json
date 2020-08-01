@@ -15,6 +15,7 @@
     "aws-appsync": "^4.0.0",
     "aws-appsync-react": "^4.0.0",
     "formik": "^2.1.5",
+    "graphql-tag": "^2.11.0",
     "react": "0.0.0-7f28234f8",
     "react-apollo": "^2.5.8",
     "react-dom": "0.0.0-7f28234f8",
