@@ -16,3 +16,18 @@ amplify configure
 ```
 npx create-react-app <app-name> --typescript
 ```
+
+### Init amplify in your react project
+```
+amplify init
+```
+
+### App api graphql
+```
+amplify add api
+```
+
+### Push api
+```
+amplify push
+```
