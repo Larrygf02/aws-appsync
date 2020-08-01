@@ -21,9 +21,18 @@ export const CreateAuctionForm = () => {
                         name: "",
                         price:0
                     }} 
-                    onSubmit={({name, price}) => {
+                    onSubmit={ async ({name, price}) => {
                         // call mutation
                         console.log({name,price});
+                        const response = await createAuction({
+                            variables: {
+                                input: {
+                                    name,
+                                    price
+                                }
+                            }
+                        })
+                        console.log(response)
                     }}
                 >
                     {({values, handleChange, handleSubmit}) => (
