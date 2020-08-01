@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Formik } from 'formik'
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button';
 
 interface FormValues {
   name: string,
@@ -16,10 +17,11 @@ export const CreateAuctionForm = () => {
             }} 
             onSubmit={({name, price}) => {
                 // call mutation
+                console.log({name,price});
             }}
         >
-            {({values, handleChange}) => (
-                <form>
+            {({values, handleChange, handleSubmit}) => (
+                <form onSubmit={handleSubmit}>
                       <TextField
                             name="name"
                             label="Name"
@@ -35,6 +37,10 @@ export const CreateAuctionForm = () => {
                             onChange={handleChange}
                             margin="normal"
                         />
+                        <br/>
+                        <Button type="submit" variant="contained">
+                            Submit
+                        </Button>
                 </form>
             )}
         </Formik>
