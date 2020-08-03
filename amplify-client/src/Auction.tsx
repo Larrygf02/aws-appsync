@@ -19,7 +19,7 @@ export const Auctions = () => {
                         gridGap: 10
                     }}>
                         {data.listAuctions.items.map(x => (
-                            <AuctionCard key={x?.id}/>
+                            <AuctionCard name={x!.name} price={x!.price} key={x?.id}  />
                         ))}
                     </div>)
             )}
