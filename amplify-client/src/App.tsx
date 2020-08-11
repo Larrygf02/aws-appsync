@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { CreateAuctionForm } from './CreateAuctionForm';
 import { Auctions } from './Auction';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react';
 
 function App() {
   return (
@@ -12,4 +13,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);

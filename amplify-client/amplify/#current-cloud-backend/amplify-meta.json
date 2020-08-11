@@ -1,0 +1,62 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-amplifyclient-dev-95707-authRole",
+			"UnauthRoleArn": "arn:aws:iam::455854889112:role/amplify-amplifyclient-dev-95707-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::455854889112:role/amplify-amplifyclient-dev-95707-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-amplifyclient-dev-95707-deployment",
+			"UnauthRoleName": "amplify-amplifyclient-dev-95707-unauthRole",
+			"StackName": "amplify-amplifyclient-dev-95707",
+			"StackId": "arn:aws:cloudformation:us-east-1:455854889112:stack/amplify-amplifyclient-dev-95707/47516e40-d407-11ea-b81f-0a78092beb51",
+			"AmplifyAppId": "d1m6u14fdt2y2l"
+		}
+	},
+	"api": {
+		"AuthAuction": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"defaultAuthentication": {
+						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
+						"userPoolConfig": {
+							"userPoolId": "authamplifyclient8139b101"
+						}
+					},
+					"additionalAuthenticationProviders": []
+				},
+				"GraphQLAPIIdOutput": "jo7vkihb7vanjjuvoduuywvg7a",
+				"GraphQLAPIEndpointOutput": "https://4qxgthoqt5fhnitq3whq5rzm4i.appsync-api.us-east-1.amazonaws.com/graphql"
+			},
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyclient-dev-95707-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+				"logicalId": "apiAuthAuction"
+			},
+			"lastPushTimeStamp": "2020-08-11T03:28:01.110Z",
+			"lastPushDirHash": "T+dnMNpNLhuZpe1XFB0Jq3Gj35Y="
+		}
+	},
+	"auth": {
+		"amplifyclient8139b101": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-amplifyclient-dev-95707-deployment/amplify-cfn-templates/auth/amplifyclient8139b101-cloudformation-template.yml",
+				"logicalId": "authamplifyclient8139b101"
+			},
+			"lastPushTimeStamp": "2020-08-11T03:28:01.110Z",
+			"output": {
+				"AppClientSecret": "1gadt2o51qobnljtm2q2om9nrm7m3o8cuo7gea6l05qcnjsafj6v",
+				"UserPoolId": "us-east-1_AbjwNa0Ju",
+				"AppClientIDWeb": "4oocb1s1c0b8bkl4bne4t7bjco",
+				"AppClientID": "3e0mgq2t8dlhgqlfg6kdkmeqg5",
+				"IdentityPoolId": "us-east-1:4c9b99cf-d576-4c58-8b95-c863aba2a57a",
+				"IdentityPoolName": "amplifyclient8139b101_identitypool_8139b101__dev",
+				"UserPoolName": "amplifyclient8139b101_userpool_8139b101"
+			},
+			"lastPushDirHash": "VcRX7C+5fgBUvRAC+NUBRvFPi9s="
+		}
+	}
+}
